@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMak HSU IP – Tracks</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --umak-blue:#002347;
+    --umak-accent:#FFD700;
+    --glass:rgba(255,255,255,.95);
+}
+
+body{
+    margin:0;
+    font-family:'Open Sans',sans-serif;
+    background:url('umakadmn.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+
+header{
+    background:var(--umak-blue);
+    color:white;
+    padding:25px;
+    text-align:center;
+    border-bottom:4px solid var(--umak-accent);
+}
+
+nav{
+    background:rgba(0,85,165,.8);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:600;}
+
+footer { 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    padding: 15px; 
+    background: #003366; 
+    color: white; 
+    text-align: center; 
+    }
+
+    nav a.disabled { pointer-events: none; color: gray; cursor: default; }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>HSU E-LEARNING</h1>
+<p>University of Makati</p>
+</header>
+
+    <nav>
+      <a href="#" class="disabled">Home</a> 
+      <a href="C:\Users\Lapuz\Desktop\Workshop\Coding\HTML\PBL Project\coursecatalogpage.html">Tracks</a>
+      <a href="C:\Users\Lapuz\Desktop\Workshop\Coding\HTML\PBL Project\aboutpage.html">About Us</a>
+      <a href="C:\Users\Lapuz\Desktop\Workshop\Coding\HTML\PBL Project\contactpage.html">Contacts</a>
+      <a href="C:\Users\Lapuz\Desktop\Workshop\Coding\HTML\PBL Project\report.html">FAQ</a>
+    </nav>
+
+<footer>© 2026 UMak HSU E-Learning</footer>
+
+<script>
+function openModal(id){
+    document.getElementById(id).classList.add("active");
+}
+function closeAll(){
+    document.querySelectorAll(".modal").forEach(m=>m.classList.remove("active"));
+}
+</script>
+
+</body>
+</html>
